@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+   list-style-type: none; 
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* *****************NAVBAR************************************* */
+nav{
+    overflow: hidden;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+header li{
+    float:right;
+    font-size: 1.2em;
+}
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    color: aliceblue;
+}
+#logo {
+    font-family: 'Bebas Neue', 'cursive';
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+}
+/* ************************Image principale************************************* */
+#imagePrincipale{
+    padding-top: 60px;
+    background: url(background\ img.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family: 'Bebas Neue', 'cursive';
+    text-align: center;
+    color: white;
+    font-size: 6em;
+    margin-top: 200px;
+    text-shadow: 5px 2px 1px black;
+}
+#premierTrait{
+    height: 2px;
+    width: 40%;
+    margin: 100px auto;
+    background-color: whitesmoke;
+    box-shadow: 5px 2px 2px black;
+}
+h3{
+    font-family: 'Dancing Script', 'cursive';
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3em;
+    text-shadow: 2px 2px 1px black;
+    margin-top: 50px;
+}
+/* ******************présentation************************* */
+#presentation{
+    background-color: whitesmoke;
+    padding: 10px 0px 100px 0px;
+}
+#textIntro{
+    padding: 0px 15%;
+}
+#prestations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.imagesPrestations h4{
+    font-family: 'Dancing Script', 'cursive';
+    text-align: center;
+    font-size: 2em;
+    margin: 15px;
+    font-weight: 300;
+    color: red;
+}
+.imagesPrestations img{
+    border: 5px none #1C6EA4;
+    border-radius: 0px 25px 25px 25px;
+    box-shadow: 0px 0px 3px 1px #FF0000;
+}
+.imagesPrestations img:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+/* *******************tourisme****************** */
+#tourisme{
+    height: 1400px;
+    background-color: white;
+    padding: 1px 2%;
+}
+#tourisme h2{
+    padding-top: 60px;
+}
+#Haut-Koenigsbourg{
+    background: url(chateau-haut-koenigsbourg-1.jpg); 
+    height: max-content;
+}
+#Colmar{
+    background: url(colmar.jpg);
+}
+#Route_des_vins{
+    background: url(route\ des\ vins.jpg); 
+
+}
+#beaux_villages{
+    background: url(eguisheim.jpg); 
+}
+#tourisme li{
+    margin: 65px 100px 0px 100px;
+    height: 250px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px black;
+}
+#tourisme p{
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 1.8em;
+    color: red;
+    box-shadow: -1px 1px 2px black;
+    text-align: center;
+    height: 35px;
+    width: 400px;
+    background-color: whitesmoke;
+    float: right;
+    margin: 50px -300px 0 0;
+    border-radius: 5px;
+} 
+#tourisme #Colmar, #tourisme #beaux_villages{
+    float: right;
+}
+#Colmar p, #beaux_villages p{
+    float: left;
+    margin-left: -300px;
+}
+/* ********************footer*************************** */
+footer{
+    background-color: red;
+    opacity: 0.9;
+    color: white;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button{
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px;
+    font-size: 1.2em;
+    font-family: 'Merriweather', sans-serif;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: lightgray;
+}
+button:hover{
+    background-color: darkgoldenrod;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait{
+    height: 2px;
+    width: 40%;
+    background-color: white;
+    margin: 60px auto;
+}
+#copyrightEtIcons{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 5%;
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: whitesmoke;
+}
+#icons{
+    display: block;
+    width: 50%;
+    text-align: left;
+}
+#icons a{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.3em;
+    color: whitesmoke;
+}
+#icons a:hover{
+    transform: scale(1.5);
+    transition: 0.2s;
+}
